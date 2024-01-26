@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+
+.Navbar {
+    height: 12vh;
+    padding-inline: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: black;
+    background-color: white
+}
+
+.admin {
+    border: 1px solid #9db2bf;
+    padding: 0.2rem 1rem;
+    background-color: #164863;
+    color: #DDF2FD;
+}
+
+.pages {
+
+    /* letter-spacing: 1px; */
+    font-size: 1.2rem font-family 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 2rem;
+
+    /* background-color: cadetblue; */
+    min-height: 100vh;
+}
+
+.TodayGames,
+.PrevGames {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2rem 1rem;
+}
+
+.Games {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: .6rem;
+
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    padding: 1rem;
+    padding-top: 1.5rem;
+}
+
+.GridOne,
+.GridTwo,
+.GridThree {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+
+    align-items: center;
+}
+
+.TimeDetails,
+.Status {
+    display: flex;
+    justify-content: end;
+}
+
+.Prediction {
+    /* justify-self: end; */
+    /* background-color: #b3b9be; */
+    margin-left: 1rem;
+    /* align-self: center; */
+    text-align: center;
+    background-color: #294B29;
+    color: #fff;
+    padding: .4rem .5rem;
+    border-radius: 5px;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    width: 80%;
+}
+
+.HomeTeam span {
+    color: #FE7A36;
+}
+
+.Date {
+    color: #294B29;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #294B29;
+    width: fit-content;
+
+}
+
+.Games i {
+    padding-right: .3rem;
+    color: #27374d;
+}
+
+.TimeDetails i {
+    padding-right: 0rem;
+}
+
+.Status i {
+    color: #294B29;
+}
+
+@media (max-width: 1100px) {
+    .Navbar {
+        padding-inline: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .Navbar {
+        padding-inline: 1rem;
+        height: 17vh;
+    }
+
+    .Logo {
+        letter-spacing: 1px;
+        font-size: 2rem;
+        font-weight: 600;
+
+    }
+
+    .Main {
+        padding: 3rem 1rem;
+    }
+
+    .TimeDetails,
+    .Status {
+
+        justify-content: start;
+    }
+}
+
+@media (max-width: 500px) {
+    .Games {
+        /* padding: 3rem 0rem; */
+    }
+
+    .GridOne,
+    .GridTwo,
+    .GridThree {
+        display: flex;
+        justify-content: space-between;
+        font-size: .9rem;
+
+    }
+
+    .Date {
+        font-size: 1.3rem;
+
+
+    }
+
+    .Main {
+        /* display: flex;
+        flex-direction: column;
+        gap: 2rem; */
+        padding: 4rem 0rem;
+
+        /* background-color: cadetblue; */
+        min-height: 100vh;
+    }
+}
+
+/* /////////////////////   CARD PAGE CSSS */
+
+.CardPage {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: rgb(237, 237, 238);
+    height: 100vh;
+    padding: 3rem;
+    margin: 2rem;
+
+}
+
+.Card1 {
+    width: 30%;
+}
+
+.Card2 {
+    width: 30%;
+}
+
+.Card3 {
+    width: 30%;
+}
+
+.Card1,
+.Card2,
+.Card3 {
+    background-color: hsl(220, 18%, 97%);
+    border-radius: 10px;
+    height: 444px;
+
+}
+
+.Card1 img,
+.Card2 img,
+.Card3 img {
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 296px;
+    width: 100%;
+
+}
+
+.CardImage {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 296px;
+}
+
+.CardDetails {
+    padding: 1rem;
+    background-color: #9db2bf;
+}
+
+.CardDetails h2 {
+    color: rgb(104, 110, 116);
+    /* padding: .5rem 0 1rem; */
+}
+
+.CardDetails p {
+    padding-top: 1.2rem;
+    opacity: 0.6;
+
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    margin: 0;
+    padding: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.social-icon {
+    margin: 0 10px;
+}
+
+.social-icon i {
+    font-size: 20px;
+    color: #164863
+}
+
+.social-icons h2 {
+    color: #DDF2FD;
+    justify-content: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+}
