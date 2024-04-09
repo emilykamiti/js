@@ -41,26 +41,26 @@
 // var job = 'programmre';
 // job = 'teacher';
 
-//!mathematical operators
-const now = 2022;
-const ageEmily = now - 2001;
-const ageIsabella = now - 1999
-console.log(ageEmily, ageIsabella);
-console.log(ageEmily * 2, ageEmily / 10, 2 ** 3)
+// //!mathematical operators
+// const now = 2022;
+// const ageEmily = now - 2001;
+// const ageIsabella = now - 1999
+// console.log(ageEmily, ageIsabella);
+// console.log(ageEmily * 2, ageEmily / 10, 2 ** 3)
 
-const firstName = 'Emily';
-const lastName = 'Kamiti';
+// const firstName = 'Emily';
+// const lastName = 'Kamiti';
 
-console.log(firstName + ' ' + lastName);
+// console.log(firstName + ' ' + lastName);
 
 
-// !assignment operators
-let x = 10 + 5;
-x += 10; // x = x+10
-x *= 4;
-x++; // x = x +1
-x--;
-console.log(x);
+// // !assignment operators
+// let x = 10 + 5;
+// x += 10; // x = x+10
+// x *= 4;
+// x++; // x = x +1
+// x--;
+// console.log(x);
 
 //! comparison operators
 
@@ -69,3 +69,12 @@ console.log(ageEmily > ageIsabella);
 console.log(ageIsabella >= 18);
 
 const isFullage = ageIsabella >= 18;
+
+
+// starts with those that have a higher precedence .
+let x, y;
+x = y = 25 - 38 - 5; //evaluating from right to left . x = y = 10, x= 10.
+console.log(x, y)
+
+const averageAge = (ageEmily + ageIsabella) / 2;
+console.log(gaeEmily, ageIsabella);
